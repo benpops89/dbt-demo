@@ -1,0 +1,8 @@
+jaffle_shop:
+  outputs:
+    dev:
+      type: duckdb
+      path: ':memory:'
+      extensions:
+        - parquet
+  target: dev
