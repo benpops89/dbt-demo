@@ -27,7 +27,7 @@ models:
   jaffle_shop:
     materialized: table
     staging:
-      materialized: view
+      materialized: table
       +docs:
         node_color: 'silver'
     +docs:
