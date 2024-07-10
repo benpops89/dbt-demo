@@ -1,11 +1,12 @@
 jaffle_shop:
   outputs:
     dev:
-      type: duckdb
-      path: ":memory:"
-      extensions: 
-        - parquet
-      fixed_retries: 1
-      threads: 16
-      timeout_seconds: 300
+      type: postgres
+      host: host.docker.internal
+      user: kestra
+      password: k3str4
+      port: 5432
+      dbname: kestra
+      schema: public
+      connect_timeout: 10
   target: dev
