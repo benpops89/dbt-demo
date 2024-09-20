@@ -1,0 +1,9 @@
+selectors:
+  - name: staging
+    description: Only run customer models
+    definition:
+      union:
+        - method: path
+          value: seeds
+        - method: path
+          value: models/staging
