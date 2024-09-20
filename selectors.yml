@@ -1,4 +1,13 @@
 selectors:
+  - name: all
+    description: Run everything
+    default: true
+    definition:
+      union:
+        - method: path
+          value: seeds
+        - method: path
+          value: models
   - name: staging
     description: Only run customer models
     definition:
